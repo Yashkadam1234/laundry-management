@@ -1,0 +1,178 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+  color: #222;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== INPUTS ===== */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #2563eb;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  width: 100%;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ===== GRID ===== */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+@media (max-width: 900px) {
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== STAT CARDS ===== */
+.stat-blue { background: #c3842d; color: white; }
+.stat-orange { background: #c3842d; color: white; }
+.stat-yellow { background: #c3842d; color: white; }
+.stat-green { background: #c3842d; color: white; }
+.stat-purple { background: #c3842d; color: white; }
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: #111827;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.navbar a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ===== LOGIN / REGISTER ===== */
+.auth-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  width: 350px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.auth-link {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.auth-link a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+/* ===== STATUS BADGES ===== */
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: white;
+}
+
+.badge.received { background: #2563eb; }
+.badge.processing { background: #eab308; }
+.badge.ready { background: #22c55e; }
+.badge.delivered { background: #a855f7; }
+
+/* ===== SEARCH BAR ===== */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* ===== DELETE BUTTON ===== */
+.btn-delete {
+  background: #ef4444;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
