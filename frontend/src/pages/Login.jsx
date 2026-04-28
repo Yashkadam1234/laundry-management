@@ -7,17 +7,26 @@ const Login = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const submit = async (e) => {
-    e.preventDefault();
+   const submit = async (e) => {
+  e.preventDefault();
 
-    try {
-      const res = await api.post("/auth/login", form);
-      localStorage.setItem("token", res.data.token);
-      navigate("/dashboard");
-    } catch (err) {
-      setError("Invalid email or password");
+  try {
+    const res = await api.post("/auth/login", form);
+
+    //  IMPORTANT: validate token exists
+    if (!res.data?.token) {
+      setError("Login failed: No token received");
+      return;
     }
-  };
+
+    localStorage.setItem("token", res.data.token);
+
+    navigate("/dashboard");
+  } catch (err) {
+    console.log(err);
+    setError("Invalid email or password");
+  }
+};
 
   return (
     <div className="auth-wrapper">
