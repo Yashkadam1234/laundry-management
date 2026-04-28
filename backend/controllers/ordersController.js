@@ -3,9 +3,8 @@ const Order = require("../models/Order");
 /* =========================
    GENERATE ORDER ID
 ========================= */
-const generateOrderID = async () => {
-  const count = await Order.countDocuments();
-  return `LAU-${String(count + 1).padStart(3, "0")}`;
+const generateOrderID = () => {
+  return `LAU-${Date.now()}`;
 };
 
 /* =========================
