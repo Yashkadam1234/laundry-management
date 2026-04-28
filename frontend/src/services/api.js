@@ -1,7 +1,9 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://laundry-management-8k3m.onrender.com/api"
+  baseURL: import.meta.env.VITE_API_URL,
+  withCredentials: true,
+
 });
 
 api.interceptors.request.use((config) => {
