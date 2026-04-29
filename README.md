@@ -5,6 +5,21 @@ A full-stack Laundry Management System built to manage customer orders efficient
 It allows creating orders, tracking status, calculating totals, and managing deliveries through a clean dashboard interface.
 
 ---
+## Live demmo link 
+
+## 📸 Screenshots
+
+### Login Page
+![Login](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Create Order
+![Create Order](screenshots/create-order.png)
+
+### Orders List
+![Orders](screenshots/orders.png)
 
 #  Setup Instructions
 
