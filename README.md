@@ -112,43 +112,89 @@ http://localhost:5173
 
 ---
 
-#  AI Usage Report
+## 🤖 AI Usage Report
 
-## 🔹 Tools Used
-
-* ChatGPT (primary)
-* GitHub Copilot (for suggestions)
+### Tools Used
+- ChatGPT GPT-4
 
 ---
 
-##   Sample Prompts Used
+### Prompts I Used
 
-*  “I want to build a simple laundry management system using React, Node.js, and MongoDB. help with the code structure”
-*  add proper validation for customer name and phone number, I want to make sure the name doesn’t contain numbers and the phone is a valid 10-digit Indian number.”
-* *"Fix Express route error undefined callback"*
-* *"Add search and filter in React table with API query params"*
-* *"Improve UI alignment and styling for dashboard cards"*
+1. "Set up a full-stack Laundry Order Management 
+System with React, Node.js, MongoDB structured 
+for Vercel serverless..."
+
+2. "Create Mongoose schemas for laundry orders 
+with auto-generated order ID like LAU-001..."
+
+3. "Build complete Express backend with JWT auth, 
+protected routes, dashboard aggregation..."
+
+4. "Build complete React frontend with login, 
+register, dashboard, create order, orders list..."
+
+5. "Add styling to all pages — navbar, cards, 
+table, forms..."
+
+---
+
+### Where AI Helped Most 
+
+- Generated entire folder structure instantly
+- Wrote all Mongoose schemas correctly
+- Set up JWT auth middleware
+- Built dashboard aggregation query in MongoDB
+- Created React Router protected routes
+- Wrote all axios API calls in api.js
+- Generated CSS styling for all pages
+- Saved approximately 8-10 hours of work
 
 ---
 
-##   What AI Got Wrong
+### Where AI Got It Wrong 
 
-* Missed proper MongoDB connection handling (`MONGO_URI undefined`)
-* Incorrect validation logic initially (allowed invalid inputs)
-* Some UI suggestions caused layout breaking
-* some small missing code part which caused big problem but recoganized timely 
+- MongoDB connection string format was wrong 
+  for standard connection (non-SRV)
+- Navbar was showing on Login/Register pages
+- Garment price was not auto-filling when 
+  garment type was selected
+- Search bar and filter disappeared after 
+  adding new columns to orders table
+- Dashboard cards were wrapping to second row 
+  instead of staying in one row
+
+---
+
+### What I Fixed Manually 
+
+- Fixed MongoDB connection string by switching 
+  from SRV to standard connection format
+- Fixed navbar visibility by checking current 
+  path using useLocation hook
+- Fixed garment price auto-fill by connecting 
+  prices config to dropdown onChange event
+- Fixed orders table by re-adding search bar 
+  and filter dropdown after table update
+- Fixed dashboard layout using CSS flexbox
 
 ---
 
-## 🔹 What Was Improved Manually
+### What I Learned From AI Mistakes
 
-* Fixed backend structure and routing errors
-* Cleaned validation logic (name + phone)
-* Debugged API connection issues
-* Refined UI layout and spacing manually
-* Improved data formatting (dates, garments summary)
+- AI generates working code but misses small 
+  UI/UX details that matter in real usage
+- Always test each feature after AI generates 
+  code before moving to next step
+- AI is great for structure and logic but 
+  needs human review for user experience
 
 ---
+
+### Time Saved Using AI
+- Estimated time without AI: 3-4 days
+- Actual time with AI: 1 day
+- Time saved: ~2-3 days
 
 #   Tradeoffs
 
