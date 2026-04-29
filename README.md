@@ -196,27 +196,23 @@ table, forms..."
 - Actual time with AI: 1 day
 - Time saved: ~2-3 days
 
-#   Tradeoffs
+## ⚖️ Tradeoffs
 
-## 🔹 What Was Skipped
+### What I Skipped
+- SMS notifications to customers when 
+  order is ready
+- Print receipt functionality
+- Password reset functionality
+- Order edit functionality after creation
 
-* Payment integration
-* SMS/notification system
-* Role-based access (admin/user)
-
----
-
-## 🔹 What Could Be Improved
-
-With more time, I would:
-
-*  Add real-time updates (WebSockets)
-*  Improve UI with Tailwind / component library
-*  Add analytics charts
-*  Deploy with Docker for scalability
-*  Role-based access (admin/user)
-
----
+### What I'd Improve With More Time
+- Add SMS/WhatsApp notification when 
+  order status changes to READY
+- Add print receipt button for each order
+- Add analytics charts on dashboard showing
+  weekly/monthly revenue trends
+- Add ability to edit orders after creation
+- Deploy on custom domain
 
 #  Tech Stack
 
